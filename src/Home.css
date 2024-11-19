@@ -1,0 +1,146 @@
+.home {
+    position: relative;
+    top: -430px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #aae1fd;
+    border-radius: 1%;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+}
+
+.features {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    background-color: black(0, 0,0, 0.5);
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #c7e9fd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    color: #00796b;
+}
+
+.feature-item p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #070101;
+}
+
+.feature-item .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2389f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.feature-item .btn:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Sufficient height for content */
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add spacing on left and right */
+    z-index: 1000; /* Ensure it appears above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Distribute links evenly */
+    flex-grow: 1; /* Allow links to span the navbar */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px; /* Padding around the links */
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #47a3ff;
+}
+
+.logo img {
+    position: relative;
+    top: -13px;
+    height: 5px; /* Adjust height to make the logo smaller */
+    width: auto;  /* Maintain aspect ratio */
+    margin-right: 20px;
+    border-radius: 5%;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        text-align: left;
+        padding: 10px;
+    }
+}
