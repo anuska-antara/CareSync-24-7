@@ -66,8 +66,14 @@ body {
   font-size: 12px;
 }
 
+.content h2{
+  margin: 0px;
+  color: black;
+}
+
 .lister, .haha{
   font-size: 18px;
+  color: white;
 }
 
 .dis

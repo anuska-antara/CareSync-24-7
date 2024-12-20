@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './App.css'; // You can create your CSS file here or use inline styles
+import './App.css';
 import logo from './logo.jpg';
 
 const responses = {
@@ -57,20 +57,20 @@ const App = () => {
                 </ul>
             </nav>
 
-            <p className="content" style={{top:'90px'}}>
-                <h2 >AI-driven Diagnostics</h2>
-                <h2 classname='dis' style={{color:'brown' ,fontSize:'20px',fontWeight:'bold'}}>Disclaimer: AI can never replace real doctors!</h2>
-                <p className='haha'>Our AI-driven Diagnostics feature offers personalized insights into your health by analyzing your health data. 
+            <p className="content" style={{padding: '20px', top:'100px'}}>
+                <h2>AI-driven Diagnostics</h2>
+                <h2 classname='dis' style={{color:'brown', fontSize:'20px',fontWeight:'bold'}}>Disclaimer: AI can never replace real doctors!</h2>
+                <p className='haha' style={{color: 'black'}}>Our AI-driven Diagnostics feature offers personalized insights into your health by analyzing your health data. 
                     <br></br>Our AI algorithms are designed to detect potential health risks and recommend actionable steps, which you can discuss with your healthcare provider.</p>
                 <ul className='lister'>
-                    <li>Data-Driven Health Insights</li>
-                    <li>Early Detection of Health Issues</li>
-                    <li>Personalized Health Recommendations</li>
+                    <li style={{color: 'black'}}>Data-Driven Health Insights</li>
+                    <li style={{color: 'black'}}>Early Detection of Health Issues</li>
+                    <li style={{color: 'black'}}>Personalized Health Recommendations</li>
                 </ul>
             </p>
           
 
-            <div className="chatbox" style={{ width: '50%', height: '80vh', marginLeft:'287px', backgroundColor: '#e0f7fa', borderRadius: '8px', padding: '20px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)', position: 'relative', top: '50px' }}>
+            <div className="chatbox" style={{ width: '50%', height: '60vh', marginLeft:'390px', backgroundColor: '#e0f7fa', borderRadius: '8px', padding: '20px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)',  }}>
                 <div className="chatbox-header" style={{ fontSize: '36px', marginBottom: '10px', color: '#790008' }}>Chat with AI Diagnostics</div>
                 <div className="chat-history" style={{ maxHeight: '65%', overflowY: 'auto', padding: '10px', backgroundColor: 'white', borderRadius: '5px', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
                     {chatHistory.map((chat, index) => (
@@ -86,7 +86,7 @@ const App = () => {
                 </div>
             </div>
 
-            <div className="faq-section" style={{ maxWidth: '600px', margin: '20px auto', background: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)', position: 'relative', top: '30px'  }}>
+            <div className="faq-section" style={{ maxWidth: '600px', margin: '20px auto', background: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 5px rgba(0,0,0,0.1)', top: '180px'  }}>
                 <h1 style={{ fontSize: '28px', color: '#00796b' }}>Frequently Asked Questions</h1>
                 {[
                     "What are the symptoms of diabetes?",
